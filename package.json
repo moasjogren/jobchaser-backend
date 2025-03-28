@@ -13,11 +13,9 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@faker-js/faker": "^9.6.0",
     "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
-    "@types/faker": "^6.6.8",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.13.13",
     "nodemon": "^3.1.9",
