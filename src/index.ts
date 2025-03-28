@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   res.send(`Server JobChaser. On port: ${port}`);
 });
 
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
