@@ -7,7 +7,7 @@ import jobRoutes from "./routes/jobRoutes";
 dotenv.config();
 
 const app = express();
-const port = Number(process.env.PORT);
+const port = Number(process.env.PORT) || 8080;
 
 app.use(cors());
 app.use(express.json());
@@ -16,7 +16,7 @@ app.use("/users", userRoutes);
 app.use("/jobs", jobRoutes);
 
 app.get("/", (req, res) => {
-  res.send(`Server JobChaser. On port: ${port}`);
+  res.sendStatus(200);
 });
 
 app.listen(port, "0.0.0.0", () => {
